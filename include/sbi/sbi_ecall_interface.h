@@ -327,6 +327,11 @@ struct sbi_pmu_event_info {
 #define SBI_EXT_CPPC_READ_HI			0x2
 #define SBI_EXT_CPPC_WRITE			0x3
 
+#define SBI_EXT_RANDOM            0x08DEADBE
+
+#define SBI_EXT_RANDOM_GET        0x0
+#define SBI_EXT_RANDOM_GET_CSR    0x1
+
 enum sbi_cppc_reg_id {
 	SBI_CPPC_HIGHEST_PERF		= 0x00000000,
 	SBI_CPPC_NOMINAL_PERF		= 0x00000001,

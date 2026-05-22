@@ -104,3 +104,6 @@ libsbi-objs-y += sbi_expected_trap.o
 libsbi-objs-y += sbi_cppc.o
 libsbi-objs-$(CC_SUPPORT_VECTOR) += sbi_vector.o
 libsbi-objs-y += sbi_fp.o
+
+carray-sbi_ecall_exts-y += ecall_random
+libsbi-objs-y += sbi_ecall_random.o
